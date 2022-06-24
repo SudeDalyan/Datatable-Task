@@ -3,7 +3,7 @@
   <b-row class="tablerow">
     <b-col md="2"></b-col>
     <b-col md="8">
-        <b-input v-model="filter" placeholder="Filter table in capital."></b-input>
+        <b-input v-model="filter" placeholder="Filter in capital column."></b-input>
         <br />
         <b-table 
         bordered 
@@ -15,7 +15,7 @@
         :fields="fields">
     
         <template #cell(flags)="data">
-            <img v-bind:src="data.item.flags.png" />
+            <img v-bind:src="data.item.flags.png" width="50%"/>
         </template>
 
     </b-table>
